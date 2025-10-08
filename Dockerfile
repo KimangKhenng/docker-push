@@ -14,8 +14,11 @@ RUN npm install --production
 # Copy the rest of the application code
 COPY . .
 
+ENV PORT=3000 \
+    MESSAGE="Hello, Docker!"
+
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE $PORT
 
 # Command to run the app
 CMD ["node", "index.js"]
