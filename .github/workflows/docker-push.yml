@@ -33,8 +33,8 @@ jobs:
                   file: ./Dockerfile
                   push: true
                   tags: |
-                      ${{ secrets.DOCKERHUB_USERNAME }}/myapp:latest
-                      ${{ secrets.DOCKERHUB_USERNAME }}/myapp:${{ github.sha }}
+                      ${{ secrets.DOCKERHUB_USERNAME }}/my-node-app:latest
+                      ${{ secrets.DOCKERHUB_USERNAME }}/my-node-app:${{ github.sha }}
 
             # Step 5 — (Optional) Show Docker image digest
             - name: Image digest

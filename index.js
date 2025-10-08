@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.send('Hello, World 陈金美!');
+    res.send('Hello, World ព្រះរាជាណាចក្រកម្ពុជា!');
 });
 
 app.listen(PORT, () => {
